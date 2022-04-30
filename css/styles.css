@@ -1,0 +1,216 @@
+/* Головний псевдоклас для перемінних */
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --white-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --black-logo-color: #000000;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --white-background-color: #ffffff;
+  --hero-background-color: #2f303a;
+  --team-background-color: #f5f4fa;
+}
+
+/* основний клас */
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  background-color: var(--white-background-color);
+  color: var(--primary-text-color);
+}
+
+/* прибираєм зайве в посилланнях та списку */
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+/* Оформлення логотипу */
+.logo-link {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+/* Оформлення заголовків */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+/* Ховаємо непотрібні заголовки screen reader only */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* Оформллення хедера */
+.logo-black {
+  color: var(--black-logo-color);
+}
+
+.header-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.header-contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-contact-link:hover,
+.header-contact-link:focus {
+  color: var(--accent-color);
+}
+
+/* Оформлення футера */
+.footer-contact {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-text-color);
+}
+
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+  color: var(--accent-color);
+}
+
+.footer {
+  background-color: var(--hero-background-color);
+}
+
+.logo-white {
+  color: var(--white-text-color);
+}
+
+.footer-contact-link {
+  color: var(--white-text-color);
+}
+
+/* ГОЛОВНА СТОРІНКА СТУДІЇ */
+
+/* Оформлення Героя */
+
+.hero {
+  background-color: var(--hero-background-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--white-text-color);
+  color: var(--accent-color);
+}
+
+/* Блок інформації про принципи та політику Студії */
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Оформлення команди */
+.team-section {
+  background-color: var(--team-background-color);
+}
+
+.team-unit {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+/* ОСОБЛИВОСТІ СТОРІНКИ ПОРТФОЛІО */
+.portfolio-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background-color: var(--team-background-color);
+  color: var(--primary-text-color);
+  cursor: pointer;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+.portfolio-list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-list-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
