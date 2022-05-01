@@ -9,27 +9,34 @@
   --white-background-color: #ffffff;
   --hero-background-color: #2f303a;
   --team-background-color: #f5f4fa;
+  --hero-button-focus: #114977;
 }
 
 /* основний клас */
 body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
+  font-size: 14px;
   background-color: var(--white-background-color);
   color: var(--primary-text-color);
 }
 
-/* прибираєм зайве в посилланнях та списку */
-a {
+address {
+  font-style: normal;
   text-decoration: none;
 }
-li {
+
+/* прибираєм зайве в посилланнях та списку */
+.link {
+  text-decoration: none;
+}
+.list {
   list-style: none;
 }
 
 /* Оформлення логотипу */
-.logo-link {
-  font-family: 'Raleway';
+.logo {
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -49,10 +56,14 @@ li {
 /* Ховаємо непотрібні заголовки screen reader only */
 .sr-only {
   position: absolute;
-  left: -10000px;
-  top: auto;
   width: 1px;
   height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -63,7 +74,6 @@ li {
 
 .header-nav-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -71,7 +81,6 @@ li {
 
 .header-contact-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
@@ -84,19 +93,35 @@ li {
   color: var(--accent-color);
 }
 
+.active {
+  color: var(--accent-color);
+}
+
 /* Оформлення футера */
-.footer-contact {
-  font-family: 'Roboto';
+.footer-contact-adress {
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-text-color);
+  text-decoration: none;
+}
+
+.footer-contact-link {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-text-color);
+  text-decoration: none;
 }
 
 .footer-contact-link:hover,
-.footer-contact-link:focus {
+.footer-contact-link:focus,
+.footer-contact-adress:hover,
+.footer-contact-adress:focus {
   color: var(--accent-color);
 }
 
@@ -105,10 +130,6 @@ li {
 }
 
 .logo-white {
-  color: var(--white-text-color);
-}
-
-.footer-contact-link {
   color: var(--white-text-color);
 }
 
@@ -145,20 +166,18 @@ li {
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--white-text-color);
-  color: var(--accent-color);
+  background-color: var(--hero-button-focus);
+  color: var(--white-text-color);
 }
 
 /* Блок інформації про принципи та політику Студії */
 .features-title {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
 .features-text {
-  font-size: 14px;
   line-height: 1.71;
 }
 
@@ -182,7 +201,7 @@ li {
 }
 
 /* ОСОБЛИВОСТІ СТОРІНКИ ПОРТФОЛІО */
-.portfolio-button {
+.portfolio-filtr-button-item {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -193,8 +212,8 @@ li {
   cursor: pointer;
 }
 
-.portfolio-button:hover,
-.portfolio-button:focus {
+.portfolio-filtr-button-item:hover,
+.portfolio-filtr-button-item:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
 }
@@ -210,4 +229,5 @@ li {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }
