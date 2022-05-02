@@ -23,7 +23,6 @@ body {
 
 address {
   font-style: normal;
-  text-decoration: none;
 }
 
 /* прибираєм зайве в посилланнях та списку */
@@ -152,6 +151,8 @@ address {
 }
 
 .hero-button {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -172,6 +173,7 @@ address {
 
 /* Блок інформації про принципи та політику Студії */
 .features-title {
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -179,6 +181,7 @@ address {
 
 .features-text {
   line-height: 1.71;
+  color: var(--secondary-text-color);
 }
 
 /* Оформлення команди */
@@ -202,6 +205,8 @@ address {
 
 /* ОСОБЛИВОСТІ СТОРІНКИ ПОРТФОЛІО */
 .portfolio-filtr-button-item {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
